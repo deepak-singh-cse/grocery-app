@@ -1,5 +1,4 @@
 require("dotenv").config();
-require("dotenv").config();
 const paymentRoutes =
   require("./routes/paymentRoutes");
 const authRoutes =
