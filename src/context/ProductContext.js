@@ -165,7 +165,7 @@ const newOrder = {
    try {
 
   const res = await axios.post(
-    "http://localhost:5000/api/orders",
+    "https://grocery-backend-wot4.onrender.com/api/orders",
     newOrder
   );
 

@@ -20,6 +20,7 @@ const [shopLogo, setShopLogo] =
 
 const [shopTiming, setShopTiming] =
   useState("");
+  
   const [image, setImage] =
   useState("");
   const uploadImage = async (file) => {
@@ -61,7 +62,7 @@ const handleRegister = async (e) => {
   try {
 
     await axios.post(
-      "http://localhost:5000/api/shopkeeper/register",
+      "https://grocery-backend-wot4.onrender.com/api/shopkeeper/register",
      {
   name,
   email,

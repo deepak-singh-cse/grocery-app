@@ -8,7 +8,7 @@ function ShopkeeperOrders() {
     try {
 
       const res = await axios.get(
-        "http://localhost:5000/api/orders"
+        "https://grocery-backend-wot4.onrender.com/api/orders"
       );
 
       setOrders(res.data);
@@ -29,7 +29,7 @@ function ShopkeeperOrders() {
     try {
 
       await axios.put(
-        `http://localhost:5000/api/orders/${id}`,
+        `https://grocery-backend-wot4.onrender.com/api/orders/${id}`,
         {
           status: "Ready For Pickup",
         }

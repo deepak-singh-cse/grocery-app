@@ -17,7 +17,7 @@ function CustomerRegister() {
     try {
 
       await axios.post(
-        "http://localhost:5000/api/customer/register",
+        "https://grocery-backend-wot4.onrender.com/api/customer/register",
         {
           name,
           mobile,

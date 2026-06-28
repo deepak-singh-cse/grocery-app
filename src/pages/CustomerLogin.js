@@ -16,7 +16,7 @@ const [address, setAddress] = useState("");
   try {
 
     const res = await axios.post(
-      "http://localhost:5000/api/customer/login",
+      "https://grocery-backend-wot4.onrender.com/api/customer/login",
       {
         mobile,
         password,

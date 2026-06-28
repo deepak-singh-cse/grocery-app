@@ -14,7 +14,7 @@ function AddProduct() {
     e.preventDefault();
 
  await axios.post(
-  "http://localhost:5000/api/products",
+  "https://grocery-backend-wot4.onrender.com/api/products",
   {
     name,
     price,

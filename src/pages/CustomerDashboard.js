@@ -40,7 +40,7 @@ const fetchProducts = async () => {
   try {
 
     const res = await axios.get(
-      "http://localhost:5000/api/products"
+      "https://grocery-backend-wot4.onrender.com/api/products"
     );
 
     setProducts(res.data);
@@ -63,7 +63,7 @@ const fetchOrders = async () => {
       );
 
     const res = await axios.get(
-      "http://localhost:5000/api/orders"
+      "https://grocery-backend-wot4.onrender.com/api/orders"
     );
 
     console.log("Orders:", res.data);
@@ -87,7 +87,7 @@ async () => {
   try {
 
     const res = await axios.get(
-      "http://localhost:5000/api/shopkeeper"
+      "https://grocery-backend-wot4.onrender.com/api/shopkeeper"
     );
 
     setShopkeepers(res.data);

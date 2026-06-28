@@ -10,7 +10,7 @@ function ProductList() {
 const fetchProducts = async () => {
   try {
     const res = await axios.get(
-      "http://localhost:5000/api/products"
+      "https://grocery-backend-wot4.onrender.com/api/products"
     );
 
     setProducts(res.data);
@@ -24,7 +24,7 @@ const deleteProduct = async (id) => {
   try {
 
     await axios.delete(
-      `http://localhost:5000/api/products/${id}`
+      `https://grocery-backend-wot4.onrender.com/api/products/${id}`
     );
 
     fetchProducts();
